@@ -99,6 +99,7 @@ class Movies(KodiDb):
 
         self.get_path_filename(obj)
         self.trailer(obj)
+        filename = obj['Filename']
 
         if obj['Countries']:
             self.add_countries(*values(obj, QU.update_country_obj))
@@ -123,7 +124,7 @@ class Movies(KodiDb):
         self.add_studios(*values(obj, QU.add_studios_movie_obj))
         self.add_playstate(*values(obj, QU.add_bookmark_obj))
         self.add_people(*values(obj, QU.add_people_movie_obj))
-        self.add_streams(*values(obj, QU.add_streams_obj))
+        self.add_streams_hdr(*values(obj, QU.add_streams_obj), filename)
         self.artwork.add(obj['Artwork'], obj['MovieId'], "movie")
         self.item_ids.append(obj['Id'])
 

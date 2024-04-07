@@ -238,6 +238,50 @@ class Kodi(object):
 
                 track['FileId'] = file_id
                 track['Runtime'] = runtime
+                track["hdrtype"] = ""
+                self.add_stream_video(*values(track, QU.add_stream_video_obj))
+
+            for track in streams["audio"]:
+                track["FileId"] = file_id
+                self.add_stream_audio(*values(track, QU.add_stream_audio_obj))
+
+            for track in streams["subtitle"]:
+                self.add_stream_sub(
+                    *values(
+                        {"language": track, "FileId": file_id}, QU.add_stream_sub_obj
+                    )
+                )
+
+    def add_streams_hdr(self, file_id, streams, runtime, filename):
+        """First remove any existing entries
+        Then re-add video, audio and subtitles.
+        """
+        self.cursor.execute(QU.delete_streams, (file_id,))
+
+        hdrtype = ""
+        if ".HDR10." in filename:
+            hdrtype = "hdr10"
+        elif ".DV." in filename:
+            hdrtype = "dolbyvision"
+        elif ".Dolby.Vision." in filename:
+            hdrtype = "dolbyvision"
+        elif ".DoVi." in filename:
+            hdrtype = "dolbyvision"
+        elif ".dovi." in filename:
+            hdrtype = "dolbyvision"
+        elif ".HDR10+." in filename:
+            hdrtype = "hdr10"
+        elif ".HDR10%2B." in filename:
+            hdrtype = "hdr10"
+        elif ".HLG." in filename:
+            hdrtype = "hlg"
+
+        filename = ""
+        if streams:
+            for track in streams["video"]:
+                track["FileId"] = file_id
+                track["Runtime"] = runtime
+                track["hdrtype"] = hdrtype
                 self.add_stream_video(*values(track, QU.add_stream_video_obj))
 
             for track in streams['audio']:

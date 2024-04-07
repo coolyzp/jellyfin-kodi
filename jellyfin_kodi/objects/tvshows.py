@@ -306,6 +306,7 @@ class TVShows(KodiDb):
         obj['Streams'] = API.media_streams(obj['Video'], obj['Audio'], obj['Subtitles'])
 
         self.get_episode_path_filename(obj)
+        filename = obj['Filename']
 
         if obj['Premiere']:
             obj['Premiere'] = Local(obj['Premiere']).split('.')[0].replace('T', " ")
@@ -339,7 +340,7 @@ class TVShows(KodiDb):
         self.update_path(*values(obj, QU.update_path_episode_obj))
         self.update_file(*values(obj, QU.update_file_obj))
         self.add_people(*values(obj, QU.add_people_episode_obj))
-        self.add_streams(*values(obj, QU.add_streams_obj))
+        self.add_streams_hdr(*values(obj, QU.add_streams_obj), filename)
         self.add_playstate(*values(obj, QU.add_bookmark_obj))
         self.artwork.update(obj['Artwork']['Primary'], obj['EpisodeId'], "episode", "thumb")
         self.item_ids.append(obj['Id'])
