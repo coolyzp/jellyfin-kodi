@@ -474,17 +474,25 @@ def split_list(itemlist, size):
     return [itemlist[i:i + size] for i in range(0, len(itemlist), size)]
 
 
-def convert_to_local(date):
+def convert_to_local(date, timezone=tz.tzlocal()):
 
     ''' Convert the local datetime to local.
     '''
     try:
         date = parser.parse(date) if isinstance(date, string_types) else date
         date = date.replace(tzinfo=tz.tzutc())
-        date = date.astimezone(tz.tzlocal())
+        date = date.astimezone(timezone)
         # Bad metadata defaults to date 1-1-1.  Catch it and don't throw errors
-        if date.year == 1:
-            return str(date)
+        if date.year < 1900:
+            # FIXME(py2): strftime don't like dates below 1900
+            return "{:04d}-{:02d}-{:02d}T{:02d}:{:02d}:{:02d}".format(
+                date.year,
+                date.month,
+                date.day,
+                date.hour,
+                date.minute,
+                date.second,
+            )
         else:
             return date.strftime('%Y-%m-%dT%H:%M:%S')
     except Exception as error:
@@ -548,10 +556,10 @@ def find_library(server, item):
     from ..database import get_sync
 
     sync = get_sync()
-
+    whitelist = [x.replace('Mixed:', "") for x in sync['Whitelist']]
     ancestors = server.jellyfin.get_ancestors(item['Id'])
     for ancestor in ancestors:
-        if ancestor['Id'] in sync['Whitelist']:
+        if ancestor['Id'] in whitelist:
             return ancestor
 
     LOG.error('No ancestor found, not syncing item with ID: {}'.format(item['Id']))
