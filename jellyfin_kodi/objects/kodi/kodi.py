@@ -252,7 +252,10 @@ class Kodi(object):
                 track["FileId"] = file_id
                 track["Runtime"] = runtime
                 track["hdrtype"] = ""
-                self.add_stream_video(*values(track, QU.add_stream_video_obj))
+                if kodi_version() < 20:
+                    self.add_stream_video(*values(track, QU.add_stream_video_obj_19))
+                else:
+                    self.add_stream_video(*values(track, QU.add_stream_video_obj))
 
             for track in streams["audio"]:
                 track["FileId"] = file_id
