@@ -275,9 +275,7 @@ class Kodi(object):
         self.cursor.execute(QU.delete_streams, (file_id,))
 
         hdrtype = ""
-        if ".HDR10." in filename:
-            hdrtype = "hdr10"
-        elif ".DV." in filename:
+        if ".DV." in filename:
             hdrtype = "dolbyvision"
         elif ".Dolby.Vision." in filename:
             hdrtype = "dolbyvision"
@@ -285,6 +283,8 @@ class Kodi(object):
             hdrtype = "dolbyvision"
         elif ".dovi." in filename:
             hdrtype = "dolbyvision"
+        elif ".HDR10." in filename:
+            hdrtype = "hdr10"
         elif ".HDR10+." in filename:
             hdrtype = "hdr10"
         elif ".HDR10%2B." in filename:
