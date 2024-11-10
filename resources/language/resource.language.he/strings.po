@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-02-23 11:37+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2024-11-02 14:41+0000\n"
+"Last-Translator: Roi Gabay <roigby@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.jellyfin.org/projects/jellyfin/"
 "jellyfin-kodi/he/>\n"
 "Language: he\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.7.2\n"
 
 msgctxt "#30157"
 msgid "Enable enhanced artwork (i.e. cover art)"
@@ -70,7 +70,7 @@ msgstr "ג׳ליפין עבור קודי"
 
 msgctxt "#30409"
 msgid "Delete from Jellyfin"
-msgstr "מחק מ-Jellyfin"
+msgstr "מחיקה מג'ליפין"
 
 msgctxt "#30518"
 msgid "Enable cinema mode"
@@ -432,7 +432,7 @@ msgstr "אנא התחבר"
 
 msgctxt "#30613"
 msgid "Change Jellyfin Connect user"
-msgstr "שנה את המשתמש בחיבור לג'ליפין"
+msgstr "שינוי המשתמש בחיבור לג'ליפין"
 
 msgctxt "#30614"
 msgid "Connect to server"
@@ -508,7 +508,7 @@ msgstr "הסרת משתמש"
 
 msgctxt "#33064"
 msgid "Remove user from the session"
-msgstr "הסרת משתמש מההפעלה"
+msgstr "הסרת משתמש מהסשן"
 
 msgctxt "#33074"
 msgid "Are you sure you want to reset your local Kodi database?"
@@ -524,7 +524,7 @@ msgstr "תיקיית גיבוי"
 
 msgctxt "#33054"
 msgid "Add user to session"
-msgstr "הוספת משתמש להפעלה"
+msgstr "הוספת משתמש לסשן"
 
 msgctxt "#33058"
 msgid "Perform local database reset"
@@ -536,7 +536,7 @@ msgstr "סנכרון המדיה של ערכת העיצוב"
 
 msgctxt "#33061"
 msgid "Add/Remove user from the session"
-msgstr "הוספת/הסרת משתמשים מההפעלה"
+msgstr "הוספת/הסרת משתמשים מהסשן"
 
 msgctxt "#33089"
 msgid "Enter folder name for backup"
@@ -560,7 +560,7 @@ msgstr "הספרייה מוּסרת"
 
 msgctxt "#33146"
 msgid "Unable to connect to Jellyfin."
-msgstr "לא ניתן להתחבר ל־Jellyfin."
+msgstr "לא ניתן להתחבר לג'ליפין."
 
 msgctxt "#33148"
 msgid "Your access to this server is restricted."
@@ -588,7 +588,7 @@ msgstr "יש להפעיל את האפשרות כדי למחוק"
 
 msgctxt "#33147"
 msgid "Your access to Jellyfin is restricted."
-msgstr "הגישה שלך ל־Jellyfin מוגבלת."
+msgstr "הגישה לג'ליפין מוגבלת."
 
 msgctxt "#33157"
 msgid "Audio only"
@@ -692,7 +692,7 @@ msgstr "אילוץ התמרה"
 
 msgctxt "#33180"
 msgid "Restart Jellyfin for Kodi"
-msgstr "להפעיל את Jellyfin מחדש בשביל קודי"
+msgstr "להפעיל מחדש את ג'ליפין בשביל קודי"
 
 msgctxt "#33181"
 msgid "Restarting to apply the patch"
@@ -716,7 +716,7 @@ msgstr "הפעלת סנכרון תוך כדי נגינה (יכול לגרום ל
 
 msgctxt "#33191"
 msgid "Restart Jellyfin for Kodi to apply this change?"
-msgstr "להפעיל את Jellyfin לקודי מחדש כדי להחיל את השינוי הזה?"
+msgstr "להפעיל מחדש את ג'ליפין לקודי כדי להחיל את השינוי הזה?"
 
 msgctxt "#33194"
 msgid "Manage libraries"
@@ -724,7 +724,7 @@ msgstr "ניהול ספריות"
 
 msgctxt "#33195"
 msgid "Enable Jellyfin for Kodi"
-msgstr "הפעלת Jellyfin לקודי"
+msgstr "הפעלת ג'ליפין לקודי"
 
 msgctxt "#33196"
 msgid "Advanced options"
@@ -773,3 +773,207 @@ msgstr "אפשרויות התמרה"
 msgctxt "#33116"
 msgid "Compress artwork (reduces quality)"
 msgstr "דחיסת הגרפיקה (איכות מופחתת)"
+
+msgctxt "#33037"
+msgid "Native (direct paths)"
+msgstr "מקומי (כתובת ישירה)"
+
+msgctxt "#33048"
+msgid "You may need to verify your network credentials in the add-on settings or use the Jellyfin path substitution to format your path correctly (Jellyfin dashboard > library). Stop syncing?"
+msgstr ""
+"ייתכן שתצטרך לאמת את אישורי הרשת שלך בהגדרות התוסף או להשתמש בנתיב החלופי של "
+"ג'ליפין כדי לערוך את הנתיב שלך בצורה נכונה (לוח המחוונים של ג'ליפין > ספריה)"
+". להפסיק לסנכרן?"
+
+msgctxt "#33087"
+msgid "Reset all Jellyfin add-on settings?"
+msgstr "לאתחל את כל הגדרות התוספים בג'ליפין?"
+
+msgctxt "#33086"
+msgid "Remove all cached artwork?"
+msgstr "למחוק את כל הartwork השמור?"
+
+msgctxt "#33088"
+msgid "Database reset has completed, Kodi will now restart to apply the changes."
+msgstr "בסיס נתונים אותחל בהצלחה, קודי יעשה אתחול בכדי להחיל את השינויים."
+
+msgctxt "#33108"
+msgid "Notifications are delayed during video playback (except live tv)."
+msgstr "ההתראות נדחות במהלך ניגון וידיאו (למעט טלוויזיה)."
+
+msgctxt "#33097"
+msgid "Important, cleanonupdate was removed in your advanced settings to prevent conflict with Jellyfin for Kodi. Kodi will restart now."
+msgstr ""
+"חשוב, פעולת ניקוי בעדכון הוסרה בהגדרות המתקדמות כדי למנוע קונפליקט עם "
+"ג'ליפין עבור קודי. קודי יבצע אתחול עכשיו."
+
+msgctxt "#33098"
+msgid "Refresh boxsets"
+msgstr "מעדכן אוספים"
+
+msgctxt "#33099"
+msgid "Install the server plugin Kodi Sync Queue to automatically apply Jellyfin library updates at startup. This setting can be found in the add-on settings > sync options > Enable Kodi Sync Queue."
+msgstr ""
+"התקנת התוסף לשרת Kody Sync Queue תאפשר להחיל עדכוני ספריית ג'ליפין בהפעלה. "
+"ההגדרה נמצאת תחת הגדרות תוספים > הגדרות סנכרון > הפעלת Kody Sync Queue."
+
+msgctxt "#33101"
+msgid "Since you are using native playback mode with music enabled, do you want to import music rating from files?"
+msgstr ""
+"לאור שימושך במוד ניגון עם מוזיקה, האם ברצונך לייבא ביקורת מוזיקה מקבצים?"
+
+msgctxt "#33102"
+msgid "Resume the previous sync?"
+msgstr "המשכת הסנכרון הקודם?"
+
+msgctxt "#33104"
+msgid "Find more info in the github wiki/Create-and-restore-from-backup."
+msgstr "עוד מידע נמצא בויקי גיטהאב/יצירה-ושחזור-מגיבוי."
+
+msgctxt "#33105"
+msgid "Enable the context menu"
+msgstr "אפשר את תפריט ההקשר"
+
+msgctxt "#33106"
+msgid "Enable the option to transcode"
+msgstr "אפשר את האפשרות להמיר קידוד"
+
+msgctxt "#33107"
+msgid "Users added to the session (no space between users). (eg username,username2)"
+msgstr "משתמשים נוספו לסשן (אין רווח בין משתמשים) (למשל משתמש1,משתמש2)"
+
+msgctxt "#33109"
+msgid "Plugin"
+msgstr "תוסף"
+
+msgctxt "#33110"
+msgid "Restart Kodi to take effect."
+msgstr "נא לרסט אצ Kodi כדי שהשינויים ישפיעו."
+
+msgctxt "#33111"
+msgid "Reset the local database to apply the playback mode change."
+msgstr "אתחול מבנה הנתונים המקומי על מנת לאפשר את שינוי מוד הניגון."
+
+msgctxt "#33163"
+msgid "Disabled/Media default"
+msgstr "מושבת/מדיית ברירת המחדל"
+
+msgctxt "#33129"
+msgid "You can sync libraries by launching the Jellyfin add-on > Add libraries."
+msgstr "ניתן לסנכרן ספריות על ידי לחיצה על תוספי ג'ליפין > הוספת ספריות."
+
+msgctxt "#33151"
+msgid "Reconnect to the same server that was previously loaded. If you want to use a different server, reset your local database, including your user information."
+msgstr ""
+"מתחבר מחדש לאותו שרת שכבר נטען. אם ברצונך להתחבר לשרת אחר, יש לרסט את מסד "
+"הנתונים המקומי, כולל את מידע המשתמש שלך."
+
+msgctxt "#33152"
+msgid "Unable to locate TV Tunes in Kodi."
+msgstr "לא ניתן למצוא מנגינות טלוויזיה בקודי."
+
+msgctxt "#33153"
+msgid "Your Jellyfin theme media has been synced to Kodi"
+msgstr "ערכת הנושא של ג'ליפין שלך הסתנכרנה עם קודי"
+
+msgctxt "#33160"
+msgid "To avoid errors, please update Jellyfin for Kodi to version: "
+msgstr "כדי להימנע משגיאות, נא לעדכן את ג'ליפין לקודי לגרסא: "
+
+msgctxt "#33138"
+msgid "You can update your library manually rather than rely on the server plugin Kodi Sync Queue. Launch the add-on and update libraries (or per library). To remove content, you'll need to repair the library."
+msgstr ""
+"ניתן לעדכן את הספריה ידנית במקום להסתמך על התוסף תור הסנכרון של קודי. יש "
+"להפעיל את התוסף ולעדכן ספריות (או כל ספריה בנפרד). כדי להסיר תוכן, יש לתקן "
+"את הספריה."
+
+msgctxt "#33145"
+msgid "Please make sure your Samba (smb) share of your Jellyfin server is accessible to your Kodi installation and that you have path substitution configured on your server. Otherwise, Kodi may fail to locate your files."
+msgstr ""
+"נא לוודא שהשיתוף של Samba (smb) של שרת ג'ליפין שלך נגיש להתקנת קודי "
+"ושמוגדרים החלפות נתיבים על השרת שלך. אחרת, קודי עלול להיכשל המציאת הקבצים "
+"שלך."
+
+msgctxt "#33128"
+msgid "Failed to retrieve latest content updates. No content updates will be applied until Kodi is restarted. If this issue persists, please report on the Jellyfin for Kodi forums, with your Kodi log."
+msgstr ""
+"איסוף עדכוני התוכן נכשל. לא יתבצעו עדכוני תוכן עד שקודי יתרסט. אם בעיה זו "
+"ממשיה, נא לדווח בפורום ג'ליפין לקודי, עם לוג קודי שלך."
+
+msgctxt "#33131"
+msgid "Refreshing boxsets"
+msgstr "עדכון תיבות"
+
+msgctxt "#33137"
+msgid "Enable Kodi Sync Queue"
+msgstr "הפעלת תור הסנכרון של קודי"
+
+msgctxt "#33155"
+msgid "The currently applied patch for Jellyfin for Kodi is corrupted! Please post to the Jellyfin for Kodi forums if this issue persists. This will need to be fixed as soon as possible."
+msgstr ""
+"הטלאי שהוחל עכשיו על ג'ליפין לקודי שגוי! נא לדווח בפורום ג'ליפין לקודי אם "
+"בעיה זו נמשכת. יש לתקן זאת מוקדם ככל האפשר."
+
+msgctxt "#33172"
+msgid "You have {number} updates pending. This may take a little while before seeing new content. It might be faster to update your libraries via launching the Jellyfin add-on > update libraries. Proceed anyway?"
+msgstr ""
+"יש {number} עדכונים ממתינים. הצגת תוכן חדש עלולה לקחת זמן מה. עדכון הספריות "
+"עשוי להיות מהיר יותר דרך תוספי ג'ליפין > עדכון ספריות. האם להמשיך למרות זאת?"
+
+msgctxt "#33174"
+msgid "Paging - download threads (default: 3)"
+msgstr "דפדוף - חוטי הורדה (ברירת מחדל: 3)"
+
+msgctxt "#33175"
+msgid "Paging tip: Each download thread requests your max items value from Jellyfin at the same time."
+msgstr ""
+"טיפ לדפדוף: כל חוט הורדה מבקש את כמות הפריטים המקסימלית מג'ליפין בו זמנית."
+
+msgctxt "#33176"
+msgid "Update or repair your libraries to apply the changes below."
+msgstr "יש לעדכן או לתקן את הספריות שלך כדי להחיל את השינויים הבאים."
+
+msgctxt "#33177"
+msgid "Display the progress bar if update count greater than"
+msgstr "הצג התקדמות אם מספר העדכונים גדול מ-"
+
+msgctxt "#33178"
+msgid "Processing updates"
+msgstr "מטפל בעדכונים"
+
+msgctxt "#33186"
+msgid "The Kodi Sync Queue speeds up the start up sync. Other syncs are triggered by server events."
+msgstr ""
+"תור הסנכרון של קודי מאיץ את סנכרון העלייה. סנכרונים אחרים מופעלים מאירועים "
+"בשרת."
+
+msgctxt "#33118"
+msgid "You've change the playback mode. Kodi needs to be reset to apply the change, would you like to do this now?"
+msgstr ""
+"שינית את מצב הניגון. יש לרסט את קודי כדי להחיל את השינויים, לעשות זאת עכשיו?"
+
+msgctxt "#33119"
+msgid "Something went wrong during the sync. You'll be able to restore progress when restarting Kodi. If the problem persists, please report on the Jellyfin for Kodi forums, with your Kodi log."
+msgstr ""
+"משהו השתבש במהלך הסנכרון. ניתן לשחזר את ההתקדמות אחרי ריסוט קודי. אם הבעיה "
+"נמשכת, נא לדווח בפורום ג'ליפין לקודי, עם לוג קודי שלך."
+
+msgctxt "#33120"
+msgid "Select the libraries to add"
+msgstr "נא לבחור את הספריות להוסיף"
+
+msgctxt "#33122"
+msgid "Restart Kodi to resume where you left off."
+msgstr "יש לרסט את קודי כדי להמשיך מאיפה שעזבת."
+
+msgctxt "#33112"
+msgid "Applies to Native and Add-on playback mode"
+msgstr "חל על מצב ניגון רגיל ודרך תוסף"
+
+msgctxt "#33113"
+msgid "Applies to Add-on playback mode only"
+msgstr "חל על ניגון דרך תוסף בלבד"
+
+msgctxt "#33173"
+msgid "Forget about the previous sync? This is not recommended."
+msgstr "שכחת את העדכון הקודם? זה לא מומלץ."
