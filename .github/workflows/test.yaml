@@ -22,10 +22,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Python ${{ matrix.py_version }}
-        uses: actions/setup-python@v5.2.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: ${{ matrix.py_version }}
 
@@ -52,11 +52,11 @@ jobs:
           coverage report
 
       - name: Upload coverage
-        uses: codecov/codecov-action@v4.5.0
+        uses: codecov/codecov-action@v5.3.1
         if: ${{ matrix.py_version == '3.11' }}
 
       - name: Publish Test Artifact
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           retention-days: 14
           name: ${{ matrix.py_version }}-${{ matrix.os }}-test-results

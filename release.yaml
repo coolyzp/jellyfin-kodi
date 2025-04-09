@@ -1,36 +1,25 @@
-version: '1.0.5'
+version: '1.0.7'
 changelog: |-
   New features and improvements
   ------------------------------------
-  + Add AV1 as a preferred codec option (#892) @Insprill
+  + Use file browser dialog for local path (#951) @sundermann
 
   Bug Fixes
   ---------
-  + Fix transcode settings visibility logic (#902) @oddstr13
-  + Improve HEVC codec handling in transcoding profiles (#895) @peterlodri92
-  + Specify encoding when converting hex-bytestring to string (#899) @oddstr13
-
-  Tests
-  ------------------------
-  + Improve HEVC codec handling in transcoding profiles (#895) @peterlodri92
+  + Use email.utils for parsing server time (#918) @oddstr13
 
   Code or Repo Maintenance
   ------------------------
-  + Disable delete option in context menu by default (#903) @oddstr13
-
-  Documentation updates
-  ---------------------
-  + Add Codecov config and update readme badges (#894) @oddstr13
+  + Update Issue Forms (#959) @BotBlake
+  + Update Issue Template (#957) @BotBlake
 
   CI & build changes
   ------------------
-  + Update actions/upload-artifact action to v4.3.6 (#898) @renovate
-  + Update github/codeql-action action to v3.26.0 (#896) @renovate
-  + Add Codecov config and update readme badges (#894) @oddstr13
-  + Update github/codeql-action action to v3.25.13 (#891) @renovate
-  + Update actions/setup-python action to v5.1.1 (#889) @renovate
-  + Update actions/upload-artifact action to v4.3.4 (#888) @renovate
-  + Update github/codeql-action action to v3.25.12 (#886) @renovate
+  + Update github/codeql-action action to v3.28.0 (#958) @renovate
+  + Update codecov/codecov-action action to v5.1.2 (#955) @renovate
+  + Update actions/upload-artifact action to v4.5.0 (#954) @renovate
+  + Update github/codeql-action action to v3.27.9 (#944) @renovate
+  + Update codecov/codecov-action action to v5.1.1 (#943) @renovate
 dependencies:
   py3:
     - addon: 'xbmc.python'
