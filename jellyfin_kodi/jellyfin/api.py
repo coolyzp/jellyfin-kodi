@@ -2,6 +2,7 @@
 from __future__ import division, absolute_import, print_function, unicode_literals
 
 import json
+from urllib.parse import quote
 
 import requests
 
@@ -146,10 +147,16 @@ class API(object):
         return self.users("/Items/%s" % item_id)
 
     def get_items(self, item_ids):
-        return self.users(
-            "/Items",
-            params={"Ids": ",".join(str(x) for x in item_ids), "Fields": info()},
-        )
+        all_results = []
+        for i in range(0, len(item_ids), 150):
+            chunk = item_ids[i : i + 150]
+            response = self.users(
+                "/Items",
+                params={"Ids": ",".join(str(x) for x in chunk), "Fields": info()},
+            )
+            if response:
+                all_results.extend(response.get("Items", []))
+        return {"Items": all_results}
 
     def get_sessions(self):
         return self.sessions(params={"ControllableByUserId": "{UserId}"})
@@ -400,10 +407,10 @@ class API(object):
 
     def get_default_headers(self):
         auth = "MediaBrowser "
-        auth += "Client=%s, " % self.config.data["app.name"]
-        auth += "Device=%s, " % self.config.data["app.device_name"]
-        auth += "DeviceId=%s, " % self.config.data["app.device_id"]
-        auth += "Version=%s" % self.config.data["app.version"]
+        auth += "Client=%s, " % quote(self.config.data["app.name"], safe="")
+        auth += "Device=%s, " % quote(self.config.data["app.device_name"], safe="")
+        auth += "DeviceId=%s, " % quote(self.config.data["app.device_id"], safe="")
+        auth += "Version=%s" % quote(self.config.data["app.version"], safe="")
 
         return {
             "Accept": "application/json",

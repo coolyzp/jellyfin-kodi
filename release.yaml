@@ -1,25 +1,23 @@
-version: '1.0.7'
+version: '1.1.1'
 changelog: |-
-  New features and improvements
-  ------------------------------------
-  + Use file browser dialog for local path (#951) @sundermann
-
   Bug Fixes
   ---------
-  + Use email.utils for parsing server time (#918) @oddstr13
+  + Escape null character in log output (#1055) @oddstr13
+  + Remove setting of (#1051) @bossanova808
 
   Code or Repo Maintenance
   ------------------------
-  + Update Issue Forms (#959) @BotBlake
-  + Update Issue Template (#957) @BotBlake
+  + Remove angelblue05 from the plugin provider name (#1054) @oddstr13
+  + Split and index in a way that gracefully falls back to no split (#1053) @oddstr13
+  + Misc cleanup and refractoring (#1045) @oddstr13
+
+  Documentation updates
+  ---------------------
+  + Remove angelblue05 from the plugin provider name (#1054) @oddstr13
 
   CI & build changes
   ------------------
-  + Update github/codeql-action action to v3.28.0 (#958) @renovate
-  + Update codecov/codecov-action action to v5.1.2 (#955) @renovate
-  + Update actions/upload-artifact action to v4.5.0 (#954) @renovate
-  + Update github/codeql-action action to v3.27.9 (#944) @renovate
-  + Update codecov/codecov-action action to v5.1.1 (#943) @renovate
+  + Update github/codeql-action action to v4 (#1050) @[renovate[bot]](https://github.com/apps/renovate)
 dependencies:
   py3:
     - addon: 'xbmc.python'
