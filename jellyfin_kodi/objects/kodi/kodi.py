@@ -251,7 +251,6 @@ class Kodi(object):
 
                 track["FileId"] = file_id
                 track["Runtime"] = runtime
-                track["hdrtype"] = ""
                 if kodi_version() < 20:
                     self.add_stream_video(*values(track, QU.add_stream_video_obj_19))
                 else:
@@ -297,7 +296,9 @@ class Kodi(object):
             for track in streams["video"]:
                 track["FileId"] = file_id
                 track["Runtime"] = runtime
-                track["hdrtype"] = hdrtype
+                # 仅当 track 中当前 hdrtype 不是 dolbyvision 或 hlg 时才覆盖/设置
+                if track.get("hdrtype", "") not in ("dolbyvision", "hlg"):
+                    track["hdrtype"] = hdrtype
                 if kodi_version() < 20:
                     self.add_stream_video(*values(track, QU.add_stream_video_obj_19))
                 else:
